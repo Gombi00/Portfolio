@@ -1,0 +1,175 @@
+
+    swiper
+    https://swiperjs.com/
+    cdn
+    https://swiperjs.com/get-started#use-swiper-from-cdn
+    기본옵션보기
+    https://swiperjs.com/demos#default
+    css 스타일만보기
+    https://swiperjs.com/swiper-api#css-styles
+    git
+    https://github.com/nolimits4web/swiper
+
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11.1.4/swiper-bundle.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11.1.4/swiper-bundle.min.js"></script>
+
+html
+--------------------------------------------------------------------------------------------------
+  <!-- Slider main container -->
+  <section class="visual_section">
+    <div class="swiper-container" id="my_slider">
+      <!-- Additional required wrapper -->
+      <ul class="swiper-wrapper">
+        <!-- Slides -->
+        <li class="swiper-slide">Slide 1</li>
+        <li class="swiper-slide">Slide 2</li>
+        <li class="swiper-slide">Slide 3</li>
+        <li class="swiper-slide">Slide 4</li>
+        <li class="swiper-slide">Slide 5</li>
+        <li class="swiper-slide">Slide 6</li>
+      </ul>
+      <!-- If we need pagination -->
+      <div class="swiper-pagination"></div>
+
+      <!-- If we need navigation buttons -->
+      <button class="swiper-button-prev">
+      </button>
+      <button class="swiper-button-next">
+      </button>
+
+      <!-- If we need scrollbar -->
+      <div class="swiper-scrollbar"></div>
+    </div>
+  </section>
+-----------------------------------------------------------------
+css
+@charset "utf-8";
+
+html {
+  scroll-behavior: smooth;
+}
+
+pre {
+  display: none;
+}
+
+.visual_section {
+  width: 100%;
+  height: 200px;
+  border: 3px solid red;
+  cursor: move;
+}
+
+/* div swiper-container */
+#my_slider {
+  position: relative;
+  width: 80%;
+  height: 100%;
+  margin: 0 auto;
+  background: blueviolet;
+  overflow: hidden;
+}
+
+/* ul swiper-wrapper*/
+#my_slider ul {
+  width: 100%;
+  height: 100%;
+}
+
+/*  li-swiper-slide */
+#my_slider ul>li {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  font-size: 18px;
+  background: coral;
+}
+
+
+#my_slider .swiper-pagination {
+  position: absolute;
+  width: 50px;
+  border: 1px solid #000;
+  top: 0px;
+  left: 0;
+}
+
+#my_slider .swiper-pagination-bullet {
+  margin-bottom: 0px;
+  width: 30px;
+  height: 5px;
+  border-radius: 0;
+  font-size: 0;
+  background: chartreuse;
+  opacity: 1;
+}
+
+#my_slider .swiper-pagination-bullet.swiper-pagination-bullet-active {
+  background: rgb(18, 171, 159);
+}
+
+#my_slider .swiper-scrollbar {
+  display: none;
+}
+--------------------------------------------------------------
+ <script>
+const swiper = new Swiper("#my_slider", {
+  slidesPerView: 1, //모바일이 먼저
+  slidesPerGroup: 1, //한번에 슬라이딩될 개수
+  spaceBetween: 10, //아이템 사이 간격
+  centeredSlides: false, //센터모드
+  direction: "horizontal",
+  //effect: 'fade',
+  speed: 500,
+  loopAdditionalSlides: 1,
+  loop: true,
+  freeMode: false,
+  // 슬라이드 넘길 때 위치 고정 여부
+  slidesOffsetBefore: 0, // 슬라이드 시작 부분 여백
+  slidesOffsetAfter: 0,
+
+  //슬라이드오토
+  autoplay: {
+    delay: 2000,
+    pauseOnMouseEnter: true,
+    disableOnInteraction: false
+    //restart autoplay when hover is removed
+    //false여야 자동재생
+  },
+  mousewheelControl: true,
+  mousewheel: {
+    sensitivity: 1,
+    releaseOnEdges: false
+  },
+  parallax: false,
+  allowTouchMove: true,
+  resistance: false, // 슬라이드 터치에 대한 저항 여부 설정
+  allowTouchMove: true, // (false-스와이핑안됨)버튼으로만 슬라이드 조작이 가능
+  //next-prev
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev"
+  },
+  //페이지내이션
+  pagination: {
+    // 페이저 버튼 사용자 설정
+    el: ".swiper-pagination", // 페이저 버튼을 담을 태그 설정
+    clickable: true, // 버튼 클릭 여부
+    type: "bullets" // 버튼 모양 결정 "bullets", "fraction"
+  },
+  // Responsive breakpoints
+  breakpoints: {
+    // when window width is >= 768px보다클때
+    768: {
+      slidesPerView: 2,
+      spaceBetween: 10
+    },
+    // when window width is >= 1024px보다클때
+    1024: {
+      slidesPerView: 3,
+      spaceBetween: 10
+    }
+  } //breakpoints
+});
+
+</script>
