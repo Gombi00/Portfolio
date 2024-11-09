@@ -1,0 +1,775 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+		content="width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=yes,shrink-to-fit=no">
+	<title>Lirikos | 아모레퍼시픽</title>
+	<link rel="stylesheet" href="css/new_reset.css">
+	<!-- <link rel="stylesheet" href="css/lirikos_mobile.css"> -->
+	<link rel="stylesheet" href="css/lirikos_mobile.css">
+	<link rel="stylesheet" href="css/lirikos_tablet.css">
+	<link rel="stylesheet" href="css/lirikos_laptop.css">
+	<link rel="stylesheet" href="css/lirikos_PC2.css">
+	<!-- 아래 링크 지우지말것 08.04 -->
+	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11.1.4/swiper-bundle.min.css">
+	<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+	<!-- <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script> -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/swiper@11.1.4/swiper-bundle.min.js"></script>
+	<script src="js/swiper_option.js"></script>
+</head>
+
+<body>
+	<div class="modal"></div>
+	<header>
+		<div class="header_center">
+			<div class="h1_wrap">
+				<h1><a href="#" class="ir_pm">logo</a></h1>
+			</div>
+			<div class="nav_wrap">
+				<nav>
+					<h2 class="screen_out">리리코스 주요내비게이션</h2>
+					<ul class="gnb">
+						<li><a href="#">Brand Story</a></li>
+						<li><a href="#">Best Sellers</a></li>
+						<li><a href="#">News & Event</a></li>
+						<li><a href="#">Meeting Point</a></li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+		<button class="m_btn" type="button">
+			<span></span>
+			<span></span>
+			<span></span>
+		</button>
+
+		<form id="search_form" name="search" method="post" action="index.php">
+			<fieldset>
+				<legend class="ir_pm">검색</legend>
+				<label for="find" class="screen_out">검색</label>
+				<input type="search" id="find" name="find">
+				<button class="search_btn" type="submit"></button>
+			</fieldset>
+		</form>
+	</header>
+
+	<main>
+		<!-- Swiper -->
+		<section class="visual_section">
+			<div class="swiper-container" id="visual_slider">
+				<!-- Additional required wrapper -->
+				<ul class="swiper-wrapper">
+					<!-- Slides -->
+					<li class="swiper-slide visual" id="visual_01"></li>
+					<li class="swiper-slide">
+						<video muted autoplay controls loop playsinline>
+							<source src="img/ingredients-visual.mp4" type="video/mp4">
+						</video>
+					</li>
+					<li class="swiper-slide" id="visual_03"></li>
+					<!-- <li class="swiper-slide">Slide 1</li>
+					<li class="swiper-slide">
+						<video muted autoplay controls loop playsinline>
+							<source src="img/ingredients-visual.mp4" type="video/mp4">
+						</video>
+					</li>
+					<li class="swiper-slide">Slide 3</li> -->
+				</ul>
+				<!-- If we need pagination -->
+				<div class="swiper-pagination"></div>
+			</div>
+			<div class="visual_section_txt">
+				<h2>
+					<span>LIRIKOS</span>
+					<span>MARINE</span>
+					<span>ENERGY</span>
+				</h2>
+				<p>Lirikos Marine Energy helps you fully embrace<br>
+					the wonders of the ocean.</p>
+				<p>Discover more</p>
+				<div class="line"></div>
+				<div class="circle"></div>
+			</div>
+		</section>
+		</div>
+
+
+		<section class="experience">
+			<div class="experience_txt">
+				<h2>
+					<span>EXPERIENCE</span>
+					<span>LIRIKOS</span>
+					<span>MARINE ENERGY</span>
+				</h2>
+			</div>
+			<div class="experience_img"></div>
+		</section>
+
+		<section class="best_seller">
+			<div class="best_seller_title">
+				<div class="title_img"></div>
+				<div class="title_txt">
+					<h2>
+						<span>B</span>est <span>S</span>ellers
+					</h2>
+					<p>Experience Lirikos<br>
+						Marine energy</p>
+				</div>
+			</div>
+
+			<div class="swiper-container" id="best_slider">
+				<!-- Additional required wrapper -->
+				<ul class="swiper-wrapper">
+					<!-- Slides -->
+					<li class="swiper-slide" id="best_01"></li>
+					<li class="swiper-slide" id="best_02"></li>
+					<li class="swiper-slide" id="best_03"></li>
+					<li class="swiper-slide" id="best_04"></li>
+					<li class="swiper-slide" id="best_05"></li>
+					<li class="swiper-slide" id="best_06"></li>
+					<li class="swiper-slide" id="best_07"></li>
+					<li class="swiper-slide" id="best_08"></li>
+				</ul>
+				<!-- If we need pagination -->
+				<div class="swiper-pagination"></div>
+			</div>
+		</section>
+
+		<section class="your_glow">
+			<div class="your_glow_txt">
+				<p>LIRIKOS MARIN ENERGY HELPS YOU FULLY EMBRACE THE WONDERS OF THE OCEAN </p>
+			</div>
+			<div class="your_glow_title">
+				<div class="title_img">
+					<div class="title_img_01"></div>
+					<div class="title_img_02"></div>
+				</div>
+				<div class="title_txt">
+					<h2><span>YOUR</span> GLOW</h2>
+					<h2><span>YOUR</span> LIRIKOS</h2>
+				</div>
+			</div>
+		</section>
+
+		<section class="key">
+			<div class="key_center">
+				<div class="key_title">
+					<h2>KEY INGREDIENTS</h2>
+					<!-- 선 집어넣기 -->
+				</div>
+				<div class="key_main">
+					<div class="main_01">
+						<div class="img_01"></div>
+						<div class="agar_wrap">
+							<p>Agar</p>
+							<p>Agar with its evenly fine<br>
+								tissueesabsorbs the find<br>
+								dust and external contaminants<br>
+								and supplies moisture to the skin.</p>
+						</div>
+					</div>
+					<div class="main_02">
+						<p>Coconut Oil</p>
+						<p>Coconut oil that melts<br>
+							makeup gently and removes<br>
+							makeup thoroughly by cleansing once.</p>
+						<p>Salicornia</p>
+						<p>Exceptional hydration to leave<br>
+							the skin moisturized.</p>
+					</div>
+					<div class="main_03">
+						<div class="img_03"></div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="brand_story">
+			<div class="brand_story_video">
+				<video muted autoplay controls loop playsinline>
+					<source src="img/main-brand.mp4" type="video/mp4">
+				</video>
+			</div>
+			<div class="brand_story_title">
+				<h2>Brand Story</h2>
+				<h3>MARINE ENERGY HAS<br>
+					BEGUN FROM<br>
+					THE SECRET OF THE<br>
+					MARINE PLANTS</h3>
+			</div>
+			<div class="story_center">
+				<div class="story_01">
+					<div class="img_01"></div>
+					<p>DESIGN STORY & SCENT</p>
+					<p>당신의 눈으로<br>
+						바다의 향과 마음을 느껴보세요</p>
+				</div>
+				<div class="story_02">
+					<div class="img_02"></div>
+					<p>INGREDIENTS</p>
+					<p>바다의 숨겨진<br>
+						무한한 가능성을 찾아보세요</p>
+				</div>
+			</div>
+			<div class="background">
+				<div class="img_01"></div>
+				<div class="img_02"></div>
+				<div class="img_03"></div>
+			</div>
+		</section>
+
+		<div class="back">
+			<section class="news_event">
+				<div class="news_event_title">
+					<h2>NEWS &</h2>
+					<h2>EVENT</h2>
+				</div>
+				<div class="news_event_center">
+					<div class="news_event_main">
+						<div class="main_01">
+							<div class="img_01"></div>
+							<p>LIRIKOS CREW</p>
+							<p>리리코 크루를 모집합니다<br>
+								'리리코'제품을 이용한 다양한 체험을<br>
+								만나보실 수 있습니다</p>
+						</div>
+						<div class="main_02">
+							<div class="img_02"></div>
+							<p>NEW & BEST</p>
+							<p>'리리코'가 선보이는 새로운<br>
+								제품을 만나보세요</p>
+						</div>
+						<div class="main_03">
+							<div class="img_03"></div>
+							<p>REVIEW</p>
+							<p>다양한 제품의 리뷰를 확인해보세요</p>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="meeting_point">
+				<div class="meeting_point_title">
+					<h2>MEETING POINT</h2>
+				</div>
+				<div class="meeting_point_main">
+					<div class="main_01">
+						<p>PopUp Store</p>
+						<p>성수동 1번길 팝업 스토어 진행중<br>
+							06.18~06.30<br>
+							더현대 서울 팝업 스토어 예정<br>
+							07.18~07.30</p>
+					</div>
+					<div class="main_02">
+						<p>Offline Store</p>
+						<p>신세게백화점 본점 입점<br>
+							더현대 판교 입점<br>
+							올리브영 강남점 입점</p>
+					</div>
+				</div>
+			</section>
+
+			<section class="instagram">
+				<div class="instagram_title">
+					<h2>INSTAGRAM</h2>
+					<p>@lirikos.official</p>
+				</div>
+				<!-- <section class="visual_section"> -->
+				<div class="swiper-container" id="insta_slider">
+					<!-- Additional required wrapper -->
+					<ul class="swiper-wrapper">
+						<!-- Slides -->
+						<li class="swiper-slide" id="insta_01"></li>
+						<li class="swiper-slide" id="insta_02"></li>
+						<li class="swiper-slide" id="insta_03"></li>
+						<li class="swiper-slide" id="insta_04"></li>
+						<li class="swiper-slide" id="insta_05"></li>
+						<li class="swiper-slide" id="insta_06"></li>
+						<li class="swiper-slide" id="insta_07"></li>
+						<li class="swiper-slide" id="insta_08"></li>
+						<li class="swiper-slide" id="insta_09"></li>
+						<li class="swiper-slide" id="insta_10"></li>
+						<li class="swiper-slide" id="insta_11"></li>
+						<li class="swiper-slide" id="insta_12"></li>
+					</ul>
+				</div>
+			</section>
+			<!-- </section> -->
+		</div>
+	</main>
+	<footer>
+		<div class="footer_sns">
+			<ul class="sns">
+				<li><a href="#" class="ir_pm">insta</a></li>
+				<li><a href="#" class="ir_pm">kakao</a></li>
+				<li><a href="#" class="ir_pm">youtube</a></li>
+				<li><a href="#" class="ir_pm">twitter</a></li>
+			</ul>
+		</div>
+		<div class="footer_txt">
+			<p>(주)리리코스 대표이사: 이연정<br>
+				본사 : 서울특별시 용산구 한강대로 106 (한강로1가) 7층 </p>
+			<p> 사업자번호: 104-86-58598<br>
+				통신판매업신고번호 : 제 2017-서울용산-1293호 </p>
+			<p> 고객상담: 080-129-9999 <br>
+				이메일: lirikosmall@lirikos.com<br>
+				호스팅제공자 : ㈜리리코스 </p>
+			<p> 고객님은 안전거래를 위해 현금 등으로<br>
+				결제시 저희 쇼핑몰에서 가입한<br>
+				이니시스 구매안전 서비스(에스크로)를 이용하실 수 있습니다.</p>
+
+			<p> © AMOREPACIFIC CORPORATION. All rights reserved.</p>
+		</div>
+	</footer>
+
+
+	<script src="https://cdn.jsdelivr.net/npm/swiper@11.1.4/swiper-bundle.min.js"></script>
+	<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+	<script>
+		const swiper = new Swiper('#visual_slider', {
+			slidesPerView: 1, //모바일이 먼저
+			slidesPerGroup: 1, //한번에 슬라이딩될 개수
+			spaceBetween: 0, //아이템 사이 간격
+			centeredSlides: false, //센터모드
+			direction: 'horizontal',
+			//effect: 'fade',
+			speed: 500,
+			loopAdditionalSlides: 0,//수정
+			loop: true,
+			freeMode: false,
+			// 슬라이드 넘길 때 위치 고정 여부
+			slidesOffsetBefore: 0, // 슬라이드 시작 부분 여백
+			slidesOffsetAfter: 0,
+
+			//슬라이드오토
+			autoplay: {
+				delay: 3000,
+				pauseOnMouseEnter: true,
+				disableOnInteraction: false
+				//restart autoplay when hover is removed
+				//false여야 자동재생
+			},
+			// mousewheelControl: true,
+			// mousewheel: {
+			//   sensitivity: 1,
+			//   releaseOnEdges: false
+			// },
+			parallax: true,
+			allowTouchMove: true,
+			resistance: false, // 슬라이드 터치에 대한 저항 여부 설정
+			allowTouchMove: true, // (false-스와이핑안됨)버튼으로만 슬라이드 조작이 가능
+			//next-prev
+			navigation: {
+				nextEl: '.swiper-button-next',
+				prevEl: '.swiper-button-prev'
+			},
+			//페이지내이션
+			// pagination: {
+			// 	// 페이저 버튼 사용자 설정
+			// 	el: '.swiper-pagination', // 페이저 버튼을 담을 태그 설정
+			// 	clickable: true, // 버튼 클릭 여부
+			// 	type: 'bullets' // 버튼 모양 결정 "bullets", "fraction"
+			// },
+			// Responsive breakpoints
+			breakpoints: {
+				// when window width is >= 768px보다클때
+				768: {
+					slidesPerView: 1,
+					spaceBetween: 10
+				},
+				// when window width is >= 1024px보다클때
+				1024: {
+					slidesPerView: 1,
+					spaceBetween: 10
+				}
+			} //breakpoints
+		});
+
+	</script>
+
+	<script>
+		const swiper1 = new Swiper('#best_slider', {
+			slidesPerView: 1, //모바일이 먼저
+			slidesPerGroup: 1, //한번에 슬라이딩될 개수
+			spaceBetween: 0, //아이템 사이 간격
+			centeredSlides: false, //센터모드
+			direction: 'horizontal',
+			//effect: 'fade',
+			speed: 300,
+			loopAdditionalSlides: 0,//수정
+			loop: true,
+			freeMode: false,
+			// 슬라이드 넘길 때 위치 고정 여부
+			slidesOffsetBefore: 0, // 슬라이드 시작 부분 여백
+			slidesOffsetAfter: 0,
+
+			//슬라이드오토
+			autoplay: {
+				delay: 3000,
+				pauseOnMouseEnter: true,
+				disableOnInteraction: false
+				//restart autoplay when hover is removed
+				//false여야 자동재생
+			},
+			// mousewheelControl: true,
+			// mousewheel: {
+			//   sensitivity: 1,
+			//   releaseOnEdges: false
+			// },
+			parallax: true,
+			allowTouchMove: true,
+			resistance: false, // 슬라이드 터치에 대한 저항 여부 설정
+			allowTouchMove: true, // (false-스와이핑안됨)버튼으로만 슬라이드 조작이 가능
+			//next-prev
+			navigation: {
+				nextEl: '.swiper-button-next',
+				prevEl: '.swiper-button-prev'
+			},
+			//페이지내이션
+			// pagination: {
+			// 	// 페이저 버튼 사용자 설정
+			// 	el: '.swiper-pagination', // 페이저 버튼을 담을 태그 설정
+			// 	clickable: true, // 버튼 클릭 여부
+			// 	type: 'bullets' // 버튼 모양 결정 "bullets", "fraction"
+			// },
+			// Responsive breakpoints
+			breakpoints: {
+				// when window width is >= 768px보다클때
+				768: {
+					slidesPerView: 3,
+					spaceBetween: 10
+				},
+				// when window width is >= 1024px보다클때
+				1024: {
+					slidesPerView: 4,
+					spaceBetween: 10
+				},
+				1920: {
+					slidesPerView: 6,
+					spaceBetween: 10
+				}
+
+			} //breakpoints
+		});
+
+	</script>
+
+	<script>
+		const swiper2 = new Swiper('#insta_slider', {
+			slidesPerView: 2, //모바일이 먼저
+			slidesPerGroup: 1, //한번에 슬라이딩될 개수
+			spaceBetween: 10, //아이템 사이 간격
+			centeredSlides: false, //센터모드
+			direction: 'horizontal',
+			//effect: 'fade',
+			speed: 500,
+			loopAdditionalSlides: 0,//수정
+			loop: true,
+			freeMode: false,
+			// 슬라이드 넘길 때 위치 고정 여부
+			slidesOffsetBefore: 0, // 슬라이드 시작 부분 여백
+			slidesOffsetAfter: 0,
+
+			//슬라이드오토
+			autoplay: {
+				delay: 3000,
+				pauseOnMouseEnter: true,
+				disableOnInteraction: false
+				//restart autoplay when hover is removed
+				//false여야 자동재생
+			},
+			// mousewheelControl: true,
+			// mousewheel: {
+			//   sensitivity: 1,
+			//   releaseOnEdges: false
+			// },
+			parallax: true,
+			allowTouchMove: true,
+			resistance: false, // 슬라이드 터치에 대한 저항 여부 설정
+			allowTouchMove: true, // (false-스와이핑안됨)버튼으로만 슬라이드 조작이 가능
+			//next-prev
+			navigation: {
+				nextEl: '.swiper-button-next',
+				prevEl: '.swiper-button-prev'
+			},
+			//페이지내이션
+			// pagination: {
+			// 	// 페이저 버튼 사용자 설정
+			// 	el: '.swiper-pagination', // 페이저 버튼을 담을 태그 설정
+			// 	clickable: true, // 버튼 클릭 여부
+			// 	type: 'bullets' // 버튼 모양 결정 "bullets", "fraction"
+			// },
+			// Responsive breakpoints
+			breakpoints: {
+				// when window width is >= 768px보다클때
+				768: {
+					slidesPerView: 4,
+					spaceBetween: 10
+				},
+				// when window width is >= 1024px보다클때
+				1024: {
+					slidesPerView: 6,
+					spaceBetween: 10
+				},
+				1920: {
+					slidesPerView: 12,
+					spaceBetween: 10
+				}
+			} //breakpoints
+		});
+
+	</script>
+	<!-- <script>
+		AOS.init();
+		//navui
+		$(function () {
+			//navi
+			$(".m_btn").on("click", function () {
+				if ($(this).hasClass("m_active")) {
+					$(".nav_wrap").animate(
+						{
+							left: "-60%"
+						}, 300);
+					$(".m_btn").removeClass("m_active");
+					$(".modal").hide();
+				} else {
+					$(".nav_wrap").animate(
+						{
+							left: "0%"
+						},
+						300
+					);
+					$(".m_btn").addClass("m_active");
+					$(".modal").show();
+				}
+
+				responsive_nav = function () {
+					var w_width = $(window).width();
+					if (w_width < 767) {
+						$('.gnb>li>a').on('touchstart  click')
+					} else if (w_width < 1025) {
+						$('.gnb>li>a').on('touchstart  click')
+					} else {
+						$('.gnb>li>a').off('click')
+						$('.gnb>li').on('hover')
+					}
+				}
+				$(window).on({
+					'ready load resize orientationchange': function () {
+						responsive_nav()
+					}
+				});
+
+				$(function () {
+					window.onresize = function () {
+						document.location.reload();
+					};
+				});
+			});
+		});//navi
+
+
+
+		//scroll-h1-m_btn
+		// $(window).on('scroll', function () {
+		// 	if ($(window).scrollTop() > 0) {
+		// 		$(".m_btn,h1,.search_btn").fadeOut(100)
+		// 	} else {
+		// 		$(".m_btn,h1,.search_btn").fadeIn(100)
+		// 	}
+		// }); //on
+	</script>
+	<script>
+		//visual_slider
+		const swiper = new Swiper("#visual_slider", {
+			slidesPerView: 1, //모바일이 먼저
+			slidesPerGroup: 1, //한번에 슬라이딩될 개수
+			spaceBetween: 0, //아이템 사이 간격
+			centeredSlides: false, //센터모드
+			direction: "horizontal",
+			//effect: 'fade',
+			speed: 500,
+			loopAdditionalSlides: 5,
+			loop: true,
+			freeMode: false,
+			// 슬라이드 넘길 때 위치 고정 여부
+			slidesOffsetBefore: 0, // 슬라이드 시작 부분 여백
+			slidesOffsetAfter: 0,
+
+			//슬라이드오토
+			autoplay: {
+				delay: 3000,
+				pauseOnMouseEnter: true,
+				disableOnInteraction: false
+				//restart autoplay when hover is removed
+				//false여야 자동재생
+			},
+			mousewheelControl: false,
+			// mousewheel: {
+			//   sensitivity: 1,
+			//   releaseOnEdges: false
+			// },
+			parallax: false,
+			allowTouchMove: true,
+			resistance: false, // 슬라이드 터치에 대한 저항 여부 설정
+			allowTouchMove: true, // (false-스와이핑안됨)버튼으로만 슬라이드 조작이 가능
+			//next-prev
+			navigation: {
+				nextEl: ".swiper-button-next",
+				prevEl: ".swiper-button-prev"
+			},
+			//페이지내이션
+			// pagination: {
+			// 	// 페이저 버튼 사용자 설정
+			// 	el: ".swiper-pagination", // 페이저 버튼을 담을 태그 설정
+			// 	clickable: true, // 버튼 클릭 여부
+			// 	type: "bullets" // 버튼 모양 결정 "bullets", "fraction"
+			// },
+			// Responsive breakpoints
+			breakpoints: {
+				// when window width is >= 768px보다클때
+				768: {
+					slidesPerView: 1,
+					spaceBetween: 0
+				},
+				// when window width is >= 1024px보다클때
+				1024: {
+					slidesPerView: 1,
+					spaceBetween: 0
+				}
+			} //breakpoints
+		});
+	</script>
+
+	<script>
+		const swiper1 = new Swiper("#best_slider", {
+			slidesPerView: 1, //모바일이 먼저
+			slidesPerGroup: 1, //한번에 슬라이딩될 개수
+			spaceBetween: 10, //아이템 사이 간격
+			centeredSlides: false, //센터모드
+			direction: "horizontal",
+			//effect: 'fade',
+			speed: 500,
+			loopAdditionalSlides: 1,
+			loop: true,
+			freeMode: false,
+			// 슬라이드 넘길 때 위치 고정 여부
+			slidesOffsetBefore: 0, // 슬라이드 시작 부분 여백
+			slidesOffsetAfter: 0,
+
+			//슬라이드오토
+			autoplay: {
+				delay: 2000,
+				pauseOnMouseEnter: true,
+				disableOnInteraction: false
+				//restart autoplay when hover is removed
+				//false여야 자동재생
+			},
+			mousewheelControl: false,
+			// mousewheel: {
+			//   sensitivity: 1,
+			//   releaseOnEdges: false
+			// },
+			parallax: false,
+			allowTouchMove: true,
+			resistance: false, // 슬라이드 터치에 대한 저항 여부 설정
+			allowTouchMove: true, // (false-스와이핑안됨)버튼으로만 슬라이드 조작이 가능
+			//next-prev
+			navigation: {
+				nextEl: ".swiper-button-next",
+				prevEl: ".swiper-button-prev"
+			},
+			//페이지내이션
+			// pagination: {
+			// 	// 페이저 버튼 사용자 설정
+			// 	el: ".swiper-pagination", // 페이저 버튼을 담을 태그 설정
+			// 	clickable: true, // 버튼 클릭 여부
+			// 	type: "bullets" // 버튼 모양 결정 "bullets", "fraction"
+			// },
+			// Responsive breakpoints
+			breakpoints: {
+				// when window width is >= 768px보다클때
+				768: {
+					slidesPerView: 2,
+					spaceBetween: 10
+				},
+				// when window width is >= 1024px보다클때
+				1024: {
+					slidesPerView: 3,
+					spaceBetween: 10
+				}
+			} //breakpoints
+		});
+	</script>
+
+	<script>
+		const swiper2 = new Swiper("#insta_slider", {
+			slidesPerView: 2, //모바일이 먼저
+			slidesPerGroup: 1, //한번에 슬라이딩될 개수
+			spaceBetween: 20, //아이템 사이 간격
+			centeredSlides: false, //센터모드
+			direction: "horizontal",
+			//effect: 'fade',
+			speed: 500,
+			loopAdditionalSlides: 1,
+			loop: true,
+			freeMode: false,
+			// 슬라이드 넘길 때 위치 고정 여부
+			slidesOffsetBefore: 0, // 슬라이드 시작 부분 여백
+			slidesOffsetAfter: 0,
+
+			//슬라이드오토
+			autoplay: {
+				delay: 2000,
+				pauseOnMouseEnter: true,
+				disableOnInteraction: false
+				//restart autoplay when hover is removed
+				//false여야 자동재생
+			},
+			mousewheelControl: false,
+			// mousewheel: {
+			//   sensitivity: 1,
+			//   releaseOnEdges: false
+			// },
+			parallax: false,
+			allowTouchMove: true,
+			resistance: false, // 슬라이드 터치에 대한 저항 여부 설정
+			allowTouchMove: true, // (false-스와이핑안됨)버튼으로만 슬라이드 조작이 가능
+			//next-prev
+			navigation: {
+				nextEl: ".swiper-button-next",
+				prevEl: ".swiper-button-prev"
+			},
+			//페이지내이션
+			// pagination: {
+			// 	// 페이저 버튼 사용자 설정
+			// 	el: ".swiper-pagination", // 페이저 버튼을 담을 태그 설정
+			// 	clickable: true, // 버튼 클릭 여부
+			// 	type: "bullets" // 버튼 모양 결정 "bullets", "fraction"
+			// },
+			// Responsive breakpoints
+			breakpoints: {
+				// when window width is >= 768px보다클때
+				768: {
+					slidesPerView: 4,
+					spaceBetween: 10
+				},
+				// when window width is >= 1024px보다클때
+				1024: {
+					slidesPerView: 6,
+					spaceBetween: 10
+				},
+				1920: {
+					slidesPerView: 12,
+					spaceBetween: 10
+				}
+			} //breakpoints
+		});
+	</script> -->
+</body>
+
+</html>
