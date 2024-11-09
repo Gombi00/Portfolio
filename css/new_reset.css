@@ -1,0 +1,108 @@
+ @charset "utf-8";
+
+@font-face {
+  font-family: 'nanumsquareotf_acbold';
+  src: url(../fonts/nanumsquareotf_acb-webfont.woff2) format('woff2');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'nanumsquareotf_aclight';
+  src: url(../fonts/nanumsquareotf_acl-webfont.woff2) format('woff2');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'nanumsquareotf_acregular';
+  src: url(../fonts/nanumsquareotf_acr-webfont.woff2) format('woff2');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'nexon_lv1_gothiclight';
+    src: url(../fonts/nexonlv1gothiclight-webfont.woff2) format('woff2');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+/*
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+
+ html {
+  font-size:0.6250em;
+  line-height: 1.15; /* 1 */
+  -webkit-text-size-adjust: 100%; /* 2 */
+}
+
+body{
+  line-height: 1;
+}
+
+a{
+  color:#333;
+  text-decoration: none;
+}
+
+li{
+	list-style: none;
+}
+
+
+/* common */
+.parents::after,.parents::before{
+  content:" ";
+  display:table;
+}
+
+.clearfix::after {
+	content:"";
+	display: block;
+	clear: both;
+}
+
+.screen_out {
+	position: absolute;
+	top: -9999em;
+}
+
+.ir_pm {
+	text-indent: -9999em;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+.ir_wa {
+	display: block;
+	overflow: hidden;
+	position: relative;
+	z-index: -10;
+	width: 100%;
+	height: 100%
+}
+/* 중요한 이미지 대체텍스트로 이미지off시에도 대체 텍스트를 보여주고자 할때 */
+
+.modal {
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.6);
+	z-index: 99;
+  display: none;
+}
+
